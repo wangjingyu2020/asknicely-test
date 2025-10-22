@@ -1,0 +1,33 @@
+@primary-color: #0078d4;
+@secondary-color: #00bfa5;
+@danger-color: #e53935;
+@text-color: #333;
+@bg-color: #f5f7fa;
+@card-bg: #ffffff;
+
+@font-family: 'Inter', sans-serif;
+@font-size-base: 14px;
+@border-radius: 8px;
+@transition-fast: 0.2s ease;
+@transition-slow: 0.4s ease;
+
+.button {
+  background-color: @primary-color;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color @transition-fast;
+
+  &:hover {
+    background-color: darken(@primary-color, 5%);
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}

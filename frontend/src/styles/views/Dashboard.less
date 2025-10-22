@@ -1,0 +1,24 @@
+@import '@/styles/variables.less';
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  font-family: @font-family;
+  background-color: @bg-color;
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .left,
+  .right {
+    flex: none;
+  }
+}
+

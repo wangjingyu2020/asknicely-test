@@ -1,0 +1,90 @@
+@import '@/styles/variables.less';
+
+.list {
+
+  .no-data {
+  text-align: center;
+  padding: 1rem;
+  color: #999;
+  font-style: italic;
+}
+
+
+  .table-wrapper {
+    max-height: 360px; 
+    min-height: 360px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f9f9f9;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tr:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  .email-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input[type="email"] {
+      flex: 1;
+      padding: 6px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .edit-icon {
+      margin-left: 8px;
+      cursor: pointer;
+      color: @primary-color;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    button {
+      .button;
+    }
+
+    span {
+      font-size: 14px;
+      color: @text-color;
+    }
+  }
+}
+
+
+
